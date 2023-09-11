@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>ReleaseRetentionSolution</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\JsonFiles\Deployments.json">
+        <Link>JsonFiles\Deployments.json</Link>
+      </Content>
+      <Content Include="..\JsonFiles\Environments.json">
+        <Link>JsonFiles\Environments.json</Link>
+      </Content>
+      <Content Include="..\JsonFiles\Projects.json">
+        <Link>JsonFiles\Projects.json</Link>
+      </Content>
+      <Content Include="..\JsonFiles\Releases.json">
+        <Link>JsonFiles\Releases.json</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
